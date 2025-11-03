@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aptitude | Placerra</title>
+  <link rel="stylesheet" href="aptitude.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo3.png" alt="Placerra Logo">
+      <!-- <h2>Placerra</h2> -->
+       <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <span class="close-icon" id="close-icon"><i class="fas fa-times" onclick="hideMenu()"></i></span>
+      <li><a href="index1.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="aptitude.html"><i class="fas fa-book"></i> Aptitude</a></li>
+      <li><a href="#"><i class="fas fa-code"></i> Programming</a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+
+    </ul>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <aside class="sidebar">
+      <h3>Aptitude Topics</h3>
+      <ul id="topicsList">
+        <li data-topic="time-work">Time and Work</li>
+        <li data-topic="quantity-inequality">Quantity Inequality</li>
+        <li data-topic="caselet-di">Caselet Data Interpretation</li>
+        <li data-topic="profit-loss">Profit and Loss</li>
+        <li data-topic="partnership">Partnership Questions</li>
+        <li data-topic="boat-stream">Boat and Stream</li>
+        <li data-topic="percentage">Percentage</li>
+        <li data-topic="quadratic">Quadratic Equation (Quant)</li>
+        <li data-topic="simplification">Simplification</li>
+        <li data-topic="speed-distance">Time, Speed and Distance</li>
+        <li data-topic="data-interpretation">Data Interpretation (DI), High Level</li>
+        <li data-topic="data-sufficiency">Data Sufficiency</li>
+        <li data-topic="si-ci">Simple & Compound Interest</li>
+        <li data-topic="number-series">Number Series</li>
+        <li data-topic="aatma-nirbhar">Aatma-Nirbhar Series</li>
+      </ul>
+    </aside>
+
+    <section class="content" id="topicContent">
+      <h2>Select a topic to begin</h2>
+      <p>Questions will appear here when you click on a topic from the left.</p>
+    </section>
+  </main>
+
+  <script src="aptitude.js"></script>
+</body>
+</html>

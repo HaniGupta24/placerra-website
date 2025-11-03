@@ -1,0 +1,304 @@
+/* ====== GLOBAL RESET ======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ====== HEADER SECTION ====== */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* ====== NAVIGATION BAR ====== */
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #0b1a3a; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} */
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: rgba(11, 26, 58, 0.95);  
+  backdrop-filter: blur(8px);          
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+  transition: background 0.3s ease;
+}
+nav.scrolled {
+  background: rgba(11, 26, 58, 0.9); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+} */
+/* --- Navbar Base --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #021024 0%, #01203a 50%, #001f3f 100%);
+  padding: 18px 50px;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* ====== LOGO ====== */
+.logo img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+/* .logo {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+} */
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ====== NAV LINKS ====== */
+/* .nav-links {
+  flex: 1;
+  text-align: right;
+} */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+/* .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  
+
+} */
+ .nav-links a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid #00e5ff;
+}
+ /* .nav-links li {
+  display: inline-block;
+} */
+ 
+
+.nav-links ul li a:hover {
+  color: #00bfa5; /* Teal accent */
+}
+
+/* ====== UNDERLINE ANIMATION ====== */
+.nav-links ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00bfa5;
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    background: #0b1a3a;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none; /* you can add JS to toggle this later */
+    text-align: right;
+    padding: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-links.active ul {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
+  }
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+nav.fa{
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li{
+    display: block;
+    margin: 20px 0;
+  }
+  .nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0%;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+     flex-direction: column;   /* 🔥 this is the key line */
+    justify-content: start;
+    align-items: flex-start;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  .nav-links.active{
+    display: flex;
+  }
+  .nav-links li{
+display: block;
+padding: 20px 0;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    background: #0b1a3a;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none; /* you can add JS to toggle this later */
+    text-align: right;
+    padding: 20px;
+}
+
+nav.fa{
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-links ul{
+  padding: 30px;
+}
+}
+/* --- Animation for navbar links on load --- */
+.nav-links a {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Each link comes one after another */
+.nav-links li:nth-child(1) a { animation-delay: 0.7s; }
+.nav-links li:nth-child(2) a { animation-delay: 0.7s; }
+.nav-links li:nth-child(3) a { animation-delay: 0.7s; }
+.nav-links li:nth-child(4) a { animation-delay: 0.7s; }
+.nav-links li:nth-child(5) a { animation-delay: 0.7s; }
+.nav-links li:nth-child(6) a { animation-delay: 0.7s; }
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

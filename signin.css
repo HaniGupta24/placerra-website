@@ -1,0 +1,183 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #001f3f, #002b64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1a1a1a;
+}
+
+/* Card Container */
+.signin-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.signin-card {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+/* Brand + Headings */
+.brand {
+  text-align: center;
+  color: #0d47a1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.signin-card h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.signup-text {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.signup-text a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.signin-form label {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.signin-form input:focus {
+  border-color: #0d47a1;
+}
+
+/* Password Field */
+.password-field {
+  position: relative;
+}
+
+.password-field .eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #333;
+}
+
+.remember input[type="checkbox"] {
+  accent-color: #2563eb; /* blue tick */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.remember label {
+  cursor: pointer;
+  user-select: none;
+}
+.forgot-password {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 500;
+ 
+
+}
+/* Button */
+.signin-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d47a1;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-form button:hover {
+  background-color: #1565c0;
+}
+
+/* Terms + Explore Links */
+.terms,
+.explore {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  color: #555;
+}
+
+.terms a,
+.explore a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms a:hover,
+.explore a:hover {
+  text-decoration: underline;
+}
+.brand-logo{
+    width: 65px;
+    height: 50px;
+    align-items: center;
+    margin-left: 130px;
+
+}
