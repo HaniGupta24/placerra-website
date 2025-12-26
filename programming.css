@@ -1,0 +1,149 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #001f3f;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #01152a;
+  padding: 0px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  width: 140px;
+  margin-left: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-links li a.active {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid #00e5ff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 31, 63, 0.7)), url("images/bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+/* Topics Section */
+.topics {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.topics h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #00e5ff;
+  text-transform: uppercase;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #012b52;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2);
+}
+
+.card i {
+  font-size: 40px;
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00bfa5;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #009f8d;
+}
+
+/* Footer */
+footer {
+  background: #01152a;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #bbb;
+}

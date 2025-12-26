@@ -20,3 +20,12 @@ function showMenu() {
 function hideMenu() {
   navLinks.style.right = "-200px";
 }
+
+// setTimeout(()=>{
+//   document.getElementById("nav-links").style.display = "none";
+// // },3000)
+// setInterval(()=>{
+//   document.getElementById("nav-links").style.display = "none";},3000)
+// setTimeout(() => {
+//     document.getElementById("nav-links").style.display = "inline";
+//   }, 3000); 

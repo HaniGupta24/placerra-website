@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #021024, #01203a);
-  padding: 16px 32px;
+  padding: 3px 32px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -687,7 +687,7 @@ h3{
   margin: 80px 10%;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-  
+
 .cta-content h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -733,4 +733,16 @@ h3{
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+
+.news{
+    background: #0b1a3a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-icons{
+  margin: 0 13px;
+  /* padding: 18px 0; */
 }

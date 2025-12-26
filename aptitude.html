@@ -5,54 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aptitude | Placerra</title>
   <link rel="stylesheet" href="aptitude.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
+  <!-- Header -->
   <header class="navbar">
     <div class="logo">
       <img src="images/logo3.png" alt="Placerra Logo">
-      <!-- <h2>Placerra</h2> -->
-       <div class="menu-toggle" id="menu-toggle">
-      <i class="fas fa-bars" onclick="showMenu()"></i>
     </div>
-    <ul class="nav-links" id="nav-links">
-        <span class="close-icon" id="close-icon"><i class="fas fa-times" onclick="hideMenu()"></i></span>
-      <li><a href="index1.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+    <ul class="nav-links">
+      <li><a href="index1.html"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="aptitude.html"><i class="fas fa-book"></i> Aptitude</a></li>
-      <li><a href="#"><i class="fas fa-code"></i> Programming</a></li>
+      <li><a href="programming.html"><i class="fas fa-code"></i> Programming</a></li>
       <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-
     </ul>
-    </div>
   </header>
 
+  <!-- Main Section -->
+       
   <main class="main-container">
+    <!-- Sidebar -->
+
+      <div id="container"></div>
     <aside class="sidebar">
       <h3>Aptitude Topics</h3>
       <ul id="topicsList">
-        <li data-topic="time-work">Time and Work</li>
-        <li data-topic="quantity-inequality">Quantity Inequality</li>
-        <li data-topic="caselet-di">Caselet Data Interpretation</li>
-        <li data-topic="profit-loss">Profit and Loss</li>
-        <li data-topic="partnership">Partnership Questions</li>
-        <li data-topic="boat-stream">Boat and Stream</li>
-        <li data-topic="percentage">Percentage</li>
-        <li data-topic="quadratic">Quadratic Equation (Quant)</li>
-        <li data-topic="simplification">Simplification</li>
-        <li data-topic="speed-distance">Time, Speed and Distance</li>
-        <li data-topic="data-interpretation">Data Interpretation (DI), High Level</li>
-        <li data-topic="data-sufficiency">Data Sufficiency</li>
-        <li data-topic="si-ci">Simple & Compound Interest</li>
-        <li data-topic="number-series">Number Series</li>
-        <li data-topic="aatma-nirbhar">Aatma-Nirbhar Series</li>
+        <h2>Quantitative Aptitude</h2>
+        <li  data-pdf="pdfs/number.pdf">Numbers</li>
+        <li data-pdf="pdfs/ages.pdf">Ages</li>
+        <li data-pdf="pdfs/profit and loss.pdf">Profit and Loss</li>
+        <li data-pdf="pdfs/partnership.pdf">Average</li>
+        <li data-pdf="pdfs/boat-stream.pdf">Time Speed Distance</li>
+        <h2>Logical Reasoining</h2>
+        <li data-pdf="pdfs/percentage.pdf">Number Series</li>
+        <li data-pdf="pdfs/quadratic.pdf">Statement and Argument</li>
+        <li data-pdf="pdfs/simplification.pdf">Letter Series</li>
+        <h2>Verbal Reasoning</h2>
+        <li data-pdf="pdfs/speed-distance.pdf">Detection Sense</li>
+        <li data-pdf="pdfs/data-interpretation.pdf">Verbal Analogies</li>
+        <li data-pdf="pdfs/data-sufficiency.pdf">Venn Diagram</li>
+        <li data-pdf="pdfs/si-ci.pdf">Blood Relation</li>
+        <li data-pdf="pdfs/number-series.pdf">Number Series</li>
       </ul>
     </aside>
+    <!-- <div id="pdfViewer" style="width:100%; height:600px; border:none;"></div> -->
 
-    <section class="content" id="topicContent">
+    <!-- Quiz Section -->
+    <section class="content" id="quizSection" style="display:none;">
+      <h2>Time & Work Quiz</h2>
+      <div id="quiz"></div>
+    </section>
+
+    <!-- PDF Section -->
+    <section class="content" id="pdfSection">
+      
       <h2>Select a topic to begin</h2>
-      <p>Questions will appear here when you click on a topic from the left.</p>
+      <iframe id="pdfViewer" src="" frameborder="0"></iframe>
     </section>
   </main>
 
   <script src="aptitude.js"></script>
 </body>
 </html>
+
