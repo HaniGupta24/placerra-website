@@ -27,4 +27,13 @@ It focuses on providing structured learning resources with a clean and easy-to-u
 ---
 
 ## 📂 Project Structure
+Placerra/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│ ├── images/
+│ └── icons/
+└── README.md
 
